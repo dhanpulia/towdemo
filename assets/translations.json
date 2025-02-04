@@ -1,0 +1,13 @@
+{
+    "en": {
+        "cookiePolicy-1": "By touching 'Accept All', you agree to the storage of cookies to improve our website.",
+        "cookiePolicy-2": "Upon consent, we may provide data for website usage analysis and marketing purposes.",
+        "cookieAcceptBtn": "Accept All"
+    },
+    "zh": {
+        "cookiePolicy-1": "點擊'全部接受'，即表示同意保存Cookies, 用於改善網站服務。",
+        "cookiePolicy-2": "如果您同意，可能會提供數據以供分析及營銷",
+        "cookieAcceptBtn": "全部同意"
+    }
+
+}

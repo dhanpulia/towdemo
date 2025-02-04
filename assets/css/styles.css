@@ -1,0 +1,823 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: nanumbarungothic, sans-serif;
+}
+
+dd, dl, li, ol, ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+button{
+    cursor: pointer;
+}
+
+#main{
+    background: #000;
+}
+
+#main .main-wrapper{
+    transition: all .5s;
+    height: 100%;
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#main .main-wrapper::before{
+    transition: all .4s;
+    z-index: 1;
+    content: "";
+    top: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url(/assets/images/bg_mask.webp) 50% 50% / cover no-repeat;
+}
+
+#main .main-wrapper .main-content{
+    transition: all .5s;
+    position: absolute;
+    width: 651px;
+    height: 100%;
+    background: url(/assets/images/bg_main.webp) right 50% / cover no-repeat;
+    z-index: 1;
+}
+
+.main-wrapper .main-titleWrapper{
+    margin: 15vh 80px 0 0;
+    padding: 0;
+    height: 28vh;
+}
+
+.main-wrapper .main-title{
+    transition: all .5s;
+    position: relative;
+    margin: 0 auto;
+    width: 43vh;
+    height: 100%;
+    font-size: 0;
+    line-height: 0;
+    background: url(/assets/images/logo_txt.webp) 50% 50% / contain no-repeat;
+    z-index: 2;
+}
+
+.main-wrapper .main-playBtnWrapper{
+    transition: all .4s;
+    position: absolute;
+    top: calc(50% - 8vh);
+    left: calc(50% - 4vh);
+    width: 7vh;
+    height: 7vh;
+    background: url(/assets/images/btn_emved.png) 50% 50% / contain no-repeat;
+}
+
+.main-wrapper .main-playBtnWrapper .main-playBtn{
+    display: block;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    font-size: 0;
+    line-height: 0;
+    background: none; 
+    cursor: pointer;
+}
+
+.main-wrapper .main-logoWrapper{
+    margin: 4vh 80px 0 0;
+    padding: 0;
+    height: 7vh;
+}
+
+.main-wrapper .main-logoWrapper .main-togLogo{
+    margin: 0 auto;
+    width: 350px;
+    height: 100%;
+    font-size: 0;
+    line-height: 0;
+    background: url(/assets/images/logo_m.webp) 50% 50% / contain no-repeat;
+}
+
+.main-wrapper .main-CTAWrapper{
+    margin: 1vh 80px 0 0;
+    padding: 0;
+    height: 12vh;
+}
+
+.main-wrapper .main-CTAWrapper .main-CTA{
+    margin: 0 auto;
+    width: 40vh;
+    height: 100%;
+    background: url(/assets/images/coming_soon.png) 50% 50% / contain no-repeat;
+    font-size: 0;
+    line-height: 0;
+}
+
+.main-wrapper .main-registerBtnGroup{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 10px 80px 0 0;
+    padding: 0;
+    height: 7vh;
+}
+
+.main-wrapper .main-registerBtnGroup .main-registerBtnWrapper{
+    transition: all .4s;
+    /* display: none; */
+    flex: 19vh 0;
+    padding: 0 5px;
+    width: 19vh;
+    height: 6vh; 
+}
+
+.main-wrapper .main-registerBtnGroup .main-registerBtnWrapper .main-registerBtnBox{
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    font-size: 0;
+    line-height: 0;
+}
+
+.main-wrapper .main-registerBtnGroup .main-registerBtnWrapper .main-registerBtnBox.main-registerBtnBox_appStore{
+    background: url(/assets/images/btn_app_predl.webp) 50% 50% / contain no-repeat;
+}
+
+.main-wrapper .main-registerBtnGroup .main-registerBtnWrapper .main-registerBtnBox.main-registerBtnBox_playStore{
+    background: url(/assets/images/btn_gogle_predl.webp) 50% 50% / contain no-repeat;
+}
+
+
+#main .main-wrapper .main-video{
+    min-width: 100%;
+    min-height: 100%;
+}
+
+
+.rightLinkList .rightLinkBtn{
+    display: block;
+    margin: 25px 0 0;
+    border: 0;
+    background: none;
+    font-size: 0;
+    line-height: 0;
+}
+
+
+#main .languageWrapper{
+    position: fixed;
+    top: 30px;
+    right: 110px;
+    z-index: 3;
+}
+
+#main .rightLinkList{
+    position: fixed;
+    top: 10px;
+    right: 38px;
+    z-index: 3;
+}
+
+#main .rightLinkList .rightLink:first-child .rightLinkBtn{
+    margin-top: 5px;
+}
+
+
+.rightLinkList .rightLink .rightLinkBtnMute{
+    width: 41px;
+    height: 31px;
+    background: url(/assets/images/btn_off.webp) 50% 50% / contain no-repeat;
+    cursor: pointer;
+}
+
+.rightLinkList .rightLink .rightLinkBtnFacebook{
+    width: 34px;
+    height: 50px;
+    background: url(/assets/images/btn_fb.webp) 50% 50% / contain no-repeat; 
+}
+
+.rightLinkList .rightLink .rightLinkBtnYoutube{
+    width: 38px;
+    height: 32px;
+    background: url(/assets/images/btn_youtubeCh.webp) 50% 50% / contain no-repeat;
+}
+
+.main-footer{
+    background-color: black;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 2;
+}
+
+.main-footer .footerWrapper .footerLeftTextWrapper p{
+    color: #fff;
+}
+
+.cookiePolicyWrapper{
+    transition: all .5s;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    display: none;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    background: #fff;
+    z-index: 999999;
+    background-size: contain;
+    touch-action: none;
+    background: #0d131c;
+}
+
+.cookiePolicyWrapper .cookiePolicyWrapper-active{
+    transition: all .5s;
+    display: flex;
+    opacity: 0;
+    transform: translateY(100px);
+    /* -webkit-animation: cookiePolicy_fadeInFromBottom100__oQP3N .4s both;
+    animation: cookiePolicy_fadeInFromBottom100__oQP3N .4s both; */
+}
+
+.cookiePolicyWrapper .cookiePolicy-body{
+    flex: 700px 0;
+}
+
+.cookiePolicy-conten{
+    margin: 0 20px 10px 0;
+}
+
+.cookiePolicyWrapper .cookiePolicy-contentPolicy{
+    transition: all .5s;
+    overflow: hidden;
+    color: #fff;
+    font-size: 16px;
+    line-height: auto;
+}
+
+.cookiePolicyWrapper .cookiePolicy-acceptBtnWrapper{
+    flex: 200px 0;
+}
+
+.cookiePolicyWrapper .cookiePolicy-acceptBtnWrapper .cookiePolicy-acceptBtn{
+    border: 0;
+    width: 150px;
+    height: 40px;
+    font-weight: 700;
+    color: #0d131c;
+    background: #e5ba42;
+}
+
+.cookiePolicyWrapper .cookiePolicy-closeBtnWrapper{
+    flex: 30px 0; 
+}
+
+.cookiePolicyWrapper .cookiePolicy-closeBtnWrapper .cookiePolicy-closeBtn{
+    display: block;
+    border: 0;
+    width: 18px;
+    height: 18px;
+    font-size: 0;
+    line-height: 0;
+    background: url(/assets/images/accept_close_pc.webp) 50% 50% / contain no-repeat;
+}
+
+.custom-select-container{
+    position: fixed;
+    top: 10px;
+    right: 110px;
+    z-index: 3;
+}
+
+.custom-select {
+    position: relative;
+    display: inline-block;
+    width: 150px;
+  }
+
+  .custom-select select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: transparent;
+    border: none;
+    outline: none;
+    padding: 10px 40px 10px 40px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    color: #fff;
+    font-weight: 700;
+  }
+
+  .custom-select select:focus {
+    outline: none;
+  }
+
+  .custom-select::before {
+    content: '';
+    position: absolute;
+    left: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 25px;
+    height: 25px;
+    background: white; /* White globe color */
+    mask: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>') no-repeat center;
+    -webkit-mask: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>') no-repeat center;
+  }
+
+  .custom-select select option {
+    color: black;
+    font-weight: 700;
+  }
+
+  .custom-select::after {
+    content: "▼";
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 12px;
+    pointer-events: none;
+    color: white;
+  }
+
+  .custom-select-container {
+    border: 2px solid #ccc;
+    border-radius: 20px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+  }
+
+
+  .modalWrapper{
+    display: block;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -99999;
+    opacity: 1;
+  }
+
+  .modalWrapper.modalWrapper-active{
+    z-index: 100000;
+  }
+
+  .modalWrapper .modalContainer{
+    width: 0;
+    height: 0;
+  }
+
+  .modalWrapper .modalVideoWrapper{
+    transition: all .5s;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 999px;
+    height: 580px;
+    display: none;
+    background: #fff;
+    z-index: 999999;
+    background: url(/assets/images/bg_frame.webp) no-repeat 50% 50%;
+    background-size: contain;
+    touch-action: none;
+  }
+
+  .modalWrapper .modalVideoWrapper.modalVideoWrapper-active{
+    transition: all .5s;
+    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .modalWrapper .modalBody{
+    margin: auto;
+  }
+
+.modalWrapper .modalContent{
+    margin: 0 auto;
+    width: 960px;
+    height: 543px;
+}
+
+.modalWrapper .modalBackground {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 99999;
+    background: rgba(0, 0, 0, .8);
+}
+
+.modalWrapper .modalCloseBtnWrapper{
+    position: absolute;
+    right: 0;
+    top: -79px;
+}
+
+.modalWrapper .modalCloseBtnWrapper .modalCloseBtn{
+    border: 0;
+    width: 79px;
+    height: 79px;
+    font-size: 0;
+    line-height: 0;
+    background: url(/assets/images/btn_close2.webp) 50% 50% / contain no-repeat;
+    cursor: pointer;
+}
+
+.cookiePolicy-content{
+    margin: 0 auto;
+}
+
+.cookiePolicy-innerContent{
+    overflow: hidden;
+    color: #fff;
+    margin: 0 20px 10px 0;
+    font-size: 16px; 
+}
+
+@media screen and (max-width: 1280px) {
+    #main .main-wrapper .main-content{
+        transition: all .5s;
+        width: 590px;
+    }
+}
+
+
+@media screen and (max-width: 1024px) {
+    #main .main-wrapper .main-content{
+        transition: all .5s;
+        width: 100%;
+        background: url(/assets/images/bg_main_pc.webp) 50% 30vh / cover no-repeat;
+    }
+
+    #main .main-wrapper .main-video {
+        transition: all .4s;
+        max-width: 130%;
+        min-height: auto;
+        transform: translateX(-15vw);
+    }
+
+    .main-wrapper .main-titleWrapper{
+        margin: 15vh auto 0;
+    }
+
+    .main-wrapper .main-logoWrapper{
+        margin: 5vh auto 0;
+    }
+
+    .main-wrapper .main-CTAWrapper{
+        margin: 1vh auto 0;
+    }
+
+    .main-wrapper .main-registerBtnGroup{
+        margin: 10px auto 0;
+    }
+
+    .modalWrapper .modalVideoWrapper{
+        width: 860px;
+        height: 500px;
+    }
+
+    .modalWrapper .modalContent{
+        transition: all .5s;
+        width: 830px;
+        height: 470px;
+    }
+
+}
+
+@media screen and (max-width: 1080px) {
+    /* .cookiePolicyWrapper {
+        padding: 20px;
+        height: auto;
+    } */
+
+    .cookiePolicyWrapper .cookiePolicy-body {
+        flex: 500px 0;
+    }
+
+    .cookiePolicyWrapper .cookiePolicy-acceptBtnWrapper {
+        flex: 150px 0;
+    }
+
+    .cookiePolicyWrapper .cookiePolicy-acceptBtnWrapper .cookiePolicy-acceptBtn {
+        width: 100px;
+        height: 40px;
+    }
+
+
+    .cookiePolicyWrapper{
+        height: 140px;
+    }
+}
+
+@media screen and (max-width: 912px) {
+    .modalWrapper .modalVideoWrapper{
+        width: 810px;
+        height: 470px;
+    }
+    .modalWrapper .modalContent{
+        transition: all .5s;
+        width: 780px;
+        height: 440px;
+    }
+}
+
+@media screen and (max-width: 820px) {
+    .modalWrapper .modalVideoWrapper{
+        width: 740px;
+        height: 430px;
+    }
+    .modalWrapper .modalContent{
+        transition: all .5s;
+        width: 712px;
+        height: 405px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .modalWrapper .modalVideoWrapper{
+        width: 650px;
+        height: 402px;
+    }
+    .modalWrapper .modalContent{
+        transition: all .5s;
+        width: 625px;
+        height: 355px;
+    }
+    .modalWrapper .modalCloseBtnWrapper{
+        top: -52px;
+    }
+    .modalWrapper .modalCloseBtnWrapper .modalCloseBtn{
+        width: 65px;
+        height: 65px; 
+    }
+    #main .rightLinkList{
+        right: 5px;
+    }
+    .custom-select-container{
+        right: 70px;
+    }
+
+
+    .cookiePolicyWrapper{
+        height: 160px;
+    }
+
+    .cookiePolicyWrapper .cookiePolicy-body {
+        flex: 350px 0;
+    }
+
+    .cookiePolicyWrapper .cookiePolicy-acceptBtnWrapper{
+        flex: 150px 0;
+    }
+    .cookiePolicyWrapper .cookiePolicy-acceptBtnWrapper .cookiePolicy-acceptBtn{
+        width: 100px;
+        height: 40px;
+    }
+        
+}
+
+@media screen and (max-width: 700px) {
+    .modalWrapper .modalVideoWrapper{
+        width: 580px;
+        height: 360px;
+    }
+    .modalWrapper .modalContent{
+        transition: all .5s;
+        width: 560px;
+        height: 313px;
+    }
+    .modalWrapper .modalCloseBtnWrapper{
+        top: -52px;
+    }
+    .modalWrapper .modalCloseBtnWrapper .modalCloseBtn{
+        width: 65px;
+        height: 65px; 
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .cookiePolicyWrapper {
+    height: 200px;
+    flex-direction: column;
+    }
+
+    .cookiePolicyWrapper .cookiePolicy-body {
+        width: 70vw;
+        flex: 80px 0;
+        padding: 0 0 10px;
+    }
+
+    .cookiePolicy-innerContent{
+        margin-bottom: 5px;
+        margin-right: 0;
+    }
+
+    .cookiePolicyWrapper .cookiePolicy-acceptBtnWrapper{
+        width: 70vw;
+        flex: 30px 0;
+    }
+
+    .cookiePolicyWrapper .cookiePolicy-acceptBtnWrapper .cookiePolicy-acceptBtn{
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+        height: 40px;
+    }
+
+    .cookiePolicyWrapper .cookiePolicy-closeBtnWrapper{
+        position: absolute;
+        top: 12%;
+        right: 5%; 
+    }
+
+    /* .cookiePolicyWrapper {
+        flex-direction: column;
+        width: auto;
+        padding: 30px 50px;
+    }
+    .cookiePolicyWrapper .cookiePolicy-body, .cookiePolicyWrapper .cookiePolicy-acceptBtnWrapper{
+        flex: 0;
+    }
+
+    .cookiePolicyWrapper .cookiePolicy-acceptBtnWrapper{
+        margin-top: 15px;
+        width: 100%;
+    }
+
+    .cookiePolicyWrapper .cookiePolicy-acceptBtnWrapper .cookiePolicy-acceptBtn{
+        width: 100%;
+    }
+
+    .cookiePolicyWrapper .cookiePolicy-closeBtnWrapper{
+        transition: all .5s;
+        position: absolute;
+        top: 12%;
+        right: 5%;
+    } */
+
+    .modalWrapper .modalVideoWrapper{
+        width: 500px;
+        height: 295px;
+    }
+    .modalWrapper .modalContent{
+        transition: all .5s;
+        width: 480px;
+        height: 272px;
+    }
+    .modalWrapper .modalCloseBtnWrapper{
+        top: -52px;
+    }
+    .modalWrapper .modalCloseBtnWrapper .modalCloseBtn{
+        width: 55px;
+        height: 55px; 
+    }
+}
+
+
+@media screen and (max-width: 540px) {
+    .main-wrapper .main-logoWrapper {
+        transition: all .4s;
+        margin: 10vh 0 0;
+    }
+
+    .main-wrapper .main-title, .main-wrapper .main-playBtnWrapper .main-playBtn, .main-wrapper .main-logoWrapper .main-togLogo, .main-wrapper .main-CTAWrapper .main-CTA, .main-wrapper .main-registerBtnGroup .main-registerBtnWrapper {
+        width: 100%;
+    }
+
+    .main-wrapper .main-titleWrapper, .main-wrapper .main-logoWrapper, .main-wrapper .main-CTAWrapper, .main-wrapper .main-registerBtnGroup{
+        margin-left:  20px;
+        margin-right:  20px;
+    }
+    .modalWrapper .modalVideoWrapper{
+        width: 420px;
+        height: 240px;
+    }
+    .modalWrapper .modalContent{
+        transition: all .5s;
+        width: 398px;
+        height: 225px;
+    }
+    .modalWrapper .modalCloseBtnWrapper{
+        top: -49px;
+    }
+    .modalWrapper .modalCloseBtnWrapper .modalCloseBtn{
+        width: 50px;
+        height: 50px;
+    }
+}
+
+@media screen and (max-width: 428px) {
+    .modalWrapper .modalVideoWrapper{
+        width: 380px;
+        height: 220px;
+    }
+    .modalWrapper .modalContent{
+        transition: all .5s;
+        width: 365px;
+        height: 205px;
+    }
+    .modalWrapper .modalCloseBtnWrapper{
+        top: -40px;
+    }
+    .modalWrapper .modalCloseBtnWrapper .modalCloseBtn{
+        width: 40px;
+        height: 40px;
+    }
+
+
+    .cookiePolicyWrapper {
+        height: 200px;
+    }
+
+    .cookiePolicy-innerContent{
+        font-size: 14px;
+    }
+        
+}
+
+@media screen and (max-width: 390px) {
+    .modalWrapper .modalVideoWrapper{
+        width: 350px;
+        height: 200px;
+    }
+    .modalWrapper .modalContent{
+        transition: all .5s;
+        width: 336px;
+        height: 192px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .modalWrapper .modalVideoWrapper{
+        width: 300px;
+        height: 175px;
+    }
+    .modalWrapper .modalContent{
+        transition: all .5s;
+        width: 290px;
+        height: 165px;
+    }
+
+    .cookiePolicyWrapper {
+        height: 220px;
+        flex-direction: column;
+        }    
+
+
+    .cookiePolicyWrapper .cookiePolicy-body {
+        flex: 80px 0;
+        padding: 0 0 10px;
+    }
+    
+    .cookiePolicy-innerContent{
+        margin-bottom: 5px;
+        margin-right: 0;
+    }
+
+    .cookiePolicyWrapper .cookiePolicy-acceptBtnWrapper{
+        flex: 30px 0;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .modalWrapper .modalVideoWrapper{
+        width: 260px;
+        height: 150px;
+    }
+    .modalWrapper .modalContent{
+        transition: all .5s;
+        width: 250px;
+        height: 140px;
+    }
+    .modalWrapper .modalCloseBtnWrapper{
+        top: -32px;
+    }
+    .modalWrapper .modalCloseBtnWrapper .modalCloseBtn{
+        width: 30px;
+        height: 30px;
+    }
+}
